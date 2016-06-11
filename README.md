@@ -1,4 +1,5 @@
 # FocusResize
+[![Build Status](https://travis-ci.org/borjabravo10/ReadMoreTextView.svg?branch=master)](https://travis-ci.org/borjabravo10/FocusResize)
 [![](https://jitpack.io/v/borjabravo10/FocusResize.svg)](https://jitpack.io/#borjabravo10/FocusResize)
 
 A custom animation with scroll listener to recycler views
