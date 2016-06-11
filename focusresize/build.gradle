@@ -13,7 +13,7 @@ ext {
 
     publishedGroupId = 'com.borjabravo'
     libraryName = 'FocusResize'
-    artifact = 'focusResize'
+    artifact = 'focusresize'
 
     libraryDescription = 'A custom animation with scroll listener to recycler views'
     libraryVersion = '1.0.0'
