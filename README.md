@@ -1,11 +1,14 @@
 # FocusResize
+[![Build Status](https://travis-ci.org/borjabravo10/ReadMoreTextView.svg?branch=master)](https://travis-ci.org/borjabravo10/FocusResize)
+[![](https://jitpack.io/v/borjabravo10/FocusResize.svg)](https://jitpack.io/#borjabravo10/FocusResize)
+
 A custom animation with scroll listener to recycler views
 
 ![GIF of its use](https://github.com/borjabravo10/FocusResize/blob/master/resources/focusResize.gif)
 
-
 ## Download
 To add the FocusResize library to your Android Studio project, simply add the following gradle dependency:
+
 ```java
 compile 'com.borjabravo:focusresize:1.0.0'
 ```
