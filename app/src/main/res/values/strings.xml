@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FocusResize</string>
+    <string name="content_description_item_custom_image">image</string>
 </resources>

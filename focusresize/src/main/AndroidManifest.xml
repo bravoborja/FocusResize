@@ -2,7 +2,7 @@
     package="com.example.library">
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:supportsRtl="true">
     </application>
 

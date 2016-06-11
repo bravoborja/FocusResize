@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:alpha="0.4"
+        android:contentDescription="@string/content_description_item_custom_image"
         android:scaleType="centerCrop" />
 
     <LinearLayout
