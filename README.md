@@ -8,6 +8,7 @@ A custom animation with scroll listener to recycler views
 
 ## Download
 To add the FocusResize library to your Android Studio project, simply add the following gradle dependency:
+
 ```java
 compile 'com.borjabravo:focusresize:1.0.0'
 ```
