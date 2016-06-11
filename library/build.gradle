@@ -1,0 +1,75 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.github.dcendents.android-maven'
+
+Properties properties = new Properties()
+if (project.rootProject.file('local.properties').exists()) {
+    properties.load(project.rootProject.file('local.properties').newDataInputStream())
+}
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'FocusResize'
+
+    publishedGroupId = 'com.borjabravo'
+    libraryName = 'FocusResize'
+    artifact = 'focusResize'
+
+    libraryDescription = 'A custom animation with scroll listener to recycler views'
+    libraryVersion = '1.0.0'
+
+    developerId = 'borjabravo10'
+    developerName = 'Borja Bravo Álvarez'
+    developerEmail = 'borja.bravoalvarez@gmail.com'
+}
+
+bintray {
+
+    user = properties.getProperty("bintray.user")
+    key = properties.getProperty("bintray.apikey")
+    configurations = ['archives']
+    pkg {
+        repo = "maven"
+        name = "FocusResize"
+        licenses = ["Apache-2.0"]
+        publish = true
+        version {
+            name = '1.0.0'
+            desc = 'A custom animation with scroll listener to recycler views'
+            vcsUrl = 'https://github.com/borjabravo10/FocusResize'
+        }
+    }
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+}
+
+if (project.rootProject.file('local.properties').exists()) {
+    apply from: 'https://raw.githubusercontent.com/borjabravo10/JCenter/master/installv1.gradle'
+    apply from: 'https://raw.githubusercontent.com/borjabravo10/JCenter/master/bintrayv1.gradle'
+}
