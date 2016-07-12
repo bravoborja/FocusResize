@@ -12,7 +12,7 @@ A custom animation with scroll listener to recycler views
 Based in UltraVisual example of [Ray Wenderlich](http://www.raywenderlich.com/99087/swift-expanding-cells-ios-collection-views).
 
 ## Download
-To add the FocusResize library to your Android Studio project, simply add the following gradle dependency:
+To add the FocusResize library to your Android Studio project, simply add the following gradle dependency, with min sdk version of 19:
 
 ```java
 compile 'com.borjabravo:focusresize:1.0.0'
