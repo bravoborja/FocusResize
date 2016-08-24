@@ -1,5 +1,5 @@
 # FocusResize
-    [![Build Status](https://travis-ci.org/borjabravo10/FocusResize.svg?branch=master)](https://travis-ci.org/borjabravo10/FocusResize)
+[![Build Status](https://travis-ci.org/borjabravo10/FocusResize.svg?branch=master)](https://travis-ci.org/borjabravo10/FocusResize)
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-FocusResize-green.svg?style=true)](https://android-arsenal.com/details/1/3834)
 [![](https://jitpack.io/v/borjabravo10/FocusResize.svg)](https://jitpack.io/#borjabravo10/FocusResize)
 [![Android Weekly](http://img.shields.io/badge/Android%20Weekly-%23213-2CB3E5.svg?style=flat)](http://androidweekly.net/issues/issue-213)
