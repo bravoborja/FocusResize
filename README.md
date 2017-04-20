@@ -100,8 +100,8 @@ After this, you'll add FocusResizeScrollListener to recycler view:
 ```
 
 **Important**: In this version, the library only works with LinearLayoutManager.VERTICAL
-License
-=======
+
+## License
 
     Copyright 2016 Borja Bravo Álvarez
 
