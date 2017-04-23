@@ -1,44 +1,14 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.jfrog.bintray'
-apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.novoda.bintray-release'
 
-Properties properties = new Properties()
-if (project.rootProject.file('local.properties').exists()) {
-    properties.load(project.rootProject.file('local.properties').newDataInputStream())
-}
-
-ext {
-    bintrayRepo = 'maven'
-    bintrayName = 'FocusResize'
-
-    publishedGroupId = 'com.borjabravo'
-    libraryName = 'FocusResize'
-    artifact = 'focusresize'
-
-    libraryDescription = 'A custom animation with scroll listener to recycler views'
-    libraryVersion = '1.0.0'
-
-    developerId = 'bravoborja'
-    developerName = 'Borja Bravo'
-    developerEmail = 'borja.bravoalvarez@gmail.com'
-}
-
-bintray {
-
-    user = properties.getProperty("bintray.user")
-    key = properties.getProperty("bintray.apikey")
-    configurations = ['archives']
-    pkg {
-        repo = "maven"
-        name = "FocusResize"
-        licenses = ["Apache-2.0"]
-        publish = true
-        version {
-            name = '1.0.0'
-            desc = 'A custom animation with scroll listener to recycler views'
-            vcsUrl = 'https://github.com/bravoborja/FocusResize'
-        }
-    }
+publish {
+    userOrg = 'bravoborja'
+    groupId = 'com.borjabravo'
+    uploadName = 'FocusResize'
+    artifactId = 'focusResize'
+    publishVersion = '1.0.0'
+    desc = 'A custom animation with scroll listener to recycler views'
+    website = 'https://github.com/bravoborja/FocusResize'
 }
 
 android {
@@ -68,9 +38,4 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile 'com.android.support:recyclerview-v7:23.4.0'
-}
-
-if (project.rootProject.file('local.properties').exists()) {
-    apply from: 'https://raw.githubusercontent.com/bravoborja/JCenter/master/installv1.gradle'
-    apply from: 'https://raw.githubusercontent.com/bravoborja/JCenter/master/bintrayv1.gradle'
 }
