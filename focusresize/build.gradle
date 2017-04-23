@@ -36,7 +36,7 @@ bintray {
         version {
             name = '1.0.0'
             desc = 'A custom animation with scroll listener to recycler views'
-            vcsUrl = 'https://github.com/borjabravo10/FocusResize'
+            vcsUrl = 'https://github.com/bravoborja/FocusResize'
         }
     }
 }
